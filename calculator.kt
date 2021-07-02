@@ -1,13 +1,15 @@
-fun main() {
+import java.util.Scanner
+
+fun main(args: Array<String>) {
+    val reader = Scanner(System.`in`)
     var result:String = ""
-    println("Select the type of opperation:\n for addition;\n - for subtraction;\n / for division;\n* for multiplication;\n")
-    var selection:String = readLine() ?: ""
-    println("Now imput the two numbers:\n")
-    
+    println("Select the type of opperation:\n + for addition;\n - for subtraction;\n / for division;\n* for multiplication;\n")
+    var selection:String = readLine()!!
+    println("Now imput the two numbers:\n\n")
     println("Type a value for the first number: ")
-    var number1:Float = readLine()!!.toFloat()
+    var number1:Float = reader.nextFloat()
     println("Type a value for the secont number: ")
-    var number2:Float = readLine()!!.toFloat()
+    var number2:Float = reader.nextFloat()
     
     when(selection){
         "+" -> {result = "The result is: ${addition(number1,number2)}"}
