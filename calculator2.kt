@@ -1,7 +1,7 @@
 fun main() {
     var result:String = ""
     println("Select the type of opperation:\n + for addition;\n - for subtraction;\n / for division;\n* for multiplication;\n")
-    println("Now imput the two numbers:\n\n")
+    println("Now input the two numbers:\n\n")
     var selection:String = "+"
     println("Type a value for the first number: ")
     var number1:Float = 2.00f
