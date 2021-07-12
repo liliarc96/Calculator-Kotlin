@@ -11,7 +11,7 @@ fun main() {
     when(selection){
         "+" -> {result = "The result is: ${addition(number1,number2)}"}
         "-" -> {result = "The result is: ${subtraction(number1,number2)}"}
-        "/" -> { if(!(number1.equals(0))) result = "The result is: ${division(number1,number2)}" else result = "Can't divide."}
+        "/" -> {result = "The result is: ${division(number1,number2)}"}
         "*" -> {result = "The result is: ${multiplication(number1,number2)}"}
         else -> {println("This operation is unavailable.")}
     }
